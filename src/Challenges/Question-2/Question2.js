@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { Form, Input, Label, Button } from 'reactstrap'
 
-
-
 const Question2 = () => {
 
     //['a','b','c','d'] a 1 sec  > b 2 sec >  c 3 sec > d 8 sec
@@ -21,12 +19,9 @@ const Question2 = () => {
                 }, 1000*(2**index))
             }
         }
-        
         return clearTimeout();
 
     },[arr])
-
- 
 
     const handleSubmit = () => {
         let data = userInput.split(',')

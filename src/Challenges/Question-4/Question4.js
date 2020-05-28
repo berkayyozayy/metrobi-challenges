@@ -6,9 +6,7 @@ const Question4 = () => {
 
     const [userInput, setUserInput] = useState('')
     const [result, setResult] = useState('')
-    const [error, setError] = useState(false)
-
-
+    
     const handleUserInput = (event) => {
 
         event.preventDefault();

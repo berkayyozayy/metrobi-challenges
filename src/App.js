@@ -15,7 +15,7 @@ function App() {
         <Route exact path="/question2" component={Question2} />
         <Route exact path="/question3" component={Question3} />
         <Route exact path="/question4" component={Question4} />
-      </Router>
+      </Router> 
     </div>
   );
 }
