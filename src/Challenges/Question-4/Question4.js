@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
-import { Container, Form, Input, Button, Label} from 'reactstrap'
+import { Container, Form, Input, Button, Label } from 'reactstrap'
 
 
 const Question4 = () => {
 
     const [userInput, setUserInput] = useState('')
     const [result, setResult] = useState('')
-    
+
     const handleUserInput = (event) => {
 
         event.preventDefault();
@@ -38,7 +38,6 @@ const Question4 = () => {
                 const popped_ch = keepOpeners.pop();
 
                 // console.log(popped_ch, "-", ch)
-                // popped_ch should match with ch
                 if (ch !== match[popped_ch]) {
                     return false;
                 }
@@ -65,11 +64,12 @@ const Question4 = () => {
         <div>
             <Container>
                 <Form>
-                    <Label>Please type a brackets</Label>
+                    <Label>Bracket Validation App</Label>
                     <Input
                         type="text"
                         value={userInput}
                         onChange={handleUserInput}
+                        placeholder="Please type brackets"
                     />
                     <Label>
                         Validation Result is {result}

@@ -36,17 +36,17 @@ const Question1 = () => {
 
   }
 
-
   return (
     <div>
       <Container>
         <Form>
-          <Label>Please type items with comma</Label>
+          <Label>Duplicates Items App</Label>
           <Input
             type="text"
             onChange={handleInput}
+            placeholder="Please type items with comma"
           />
-          <Label> Duplicates Items </Label> <br></br> {duplicates.length > 0 && duplicates.join(' ')} 
+          <Label>Duplicates Items</Label> <br></br> {duplicates.length > 0 && duplicates.join(' ')} 
         </Form>
       </Container>
     </div>

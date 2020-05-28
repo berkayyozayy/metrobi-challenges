@@ -1,5 +1,4 @@
 import React from 'react'
-import './Question3.module.css'
 import Header from './Header/Header'
 import MainContainer from './MainContainer/MainContainer'
 import RelatedContainer from './RelatedContainer/RelatedContainerApp'
